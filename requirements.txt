@@ -1,0 +1,6 @@
+pandas
+numpy
+scikit-learn
+jinja2
+python-Levenshtein
+fuzzywuzzy
