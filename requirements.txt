@@ -1,6 +1,8 @@
+streamlit
 pandas
 numpy
 scikit-learn
 jinja2
-python-Levenshtein
+matplotlib
 fuzzywuzzy
+python-Levenshtein

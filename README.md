@@ -1,24 +1,22 @@
 # google-x-kaggle
 https://www.kaggle.com/code/shishirkatakam/notebook157133e39b
 
-AdaptiveDataDoctor
+# AdaptiveDataDoctor
 
-An ADK-powered agent that automatically detects and fixes data quality issues in enterprise datasets.
+ADK-inspired agent that automatically detects and fixes common data quality issues.
 
-Features
+## Features
+- Schema inference & data profiling
+- Missing-value imputation (auto + evaluative selector)
+- Outlier detection (IsolationForest)
+- Duplicate resolution
+- Drift detection + visualization
+- Audit report generation (Markdown)
+- Optional Supervisor multi-agent orchestration
 
-Schema inference
-
-Data profiling
-
-Missing-value imputation
-
-Outlier detection
-
-Duplicate resolution
-
-Drift detection (optional baseline)
-
-Markdown audit report
-
-Cleaned dataset output
+## Quick start
+```bash
+git clone https://github.com/shishir-katakam/google-x-kaggle
+cd google-x-kaggle
+pip install -r requirements.txt
+python -c "from src.agent import AdaptiveDataDoctorAgent; AdaptiveDataDoctorAgent().run('data/sample_corrupted.csv')"
